@@ -39,6 +39,11 @@
                         <td>
                             <a href=" {{ route('movies.show', $movie->id) }} " class="btn btn-info btn-sm"><i class="fa-solid fa-circle-info"></i></a>
                             <a href=" {{ route('movies.edit', $movie->id) }} " class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <form action="{{ route('movies.destroy', $movie->id)}}" method="POST" onsubmit="return confirm('Sei sicuro di voler eliminare l\'oggetto?')">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                            </form>
                         </td>
                     </tr>
                     @endforeach
