@@ -16,14 +16,14 @@ class MovieSeeder extends Seeder
     public function run()
     {
         $movies = config('movies');
-        foreach ($movies as $movie) {
+        foreach ($movies as $item) {
             $movie = new Movie();
-            $movie->name = $movie['name'];
-            $movie->img = $movie['img'];
-            $movie->genre = $movie['genre'];
-            $movie->vote = $movie['vote'];
-            $movie->original_language = $movie['original_language'];
-            $movie->length = $movie['length'];
+            $movie->name = $item['name'];
+            $movie->img = $item['img'];
+            $movie->genre = $item['genre'];
+            $movie->vote = $item['vote'];
+            $movie->original_language = $item['original_language'];
+            $movie->length = $item['length'];
 
             $movie->save();
         }

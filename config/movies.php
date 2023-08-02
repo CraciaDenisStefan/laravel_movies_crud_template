@@ -44,7 +44,7 @@
         'name' => 'Il signore degli anelli: le due torri',
         'img' => 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fVKewiBPcY2dQujYEsnQmQ7lfRZ.jpg',
         'genre' => 'Fantasy',
-        'vote'  => '9+',
+        'vote'  => '9',
         'original_language' => 'Inglese',
         'length' => '180'
     ],
