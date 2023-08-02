@@ -19,4 +19,3 @@ Route::get('/', function () {
 })->name('homepage');
 
 Route::resource('movies', MovieController::class);
-
