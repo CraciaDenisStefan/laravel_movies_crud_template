@@ -9,7 +9,7 @@
     </div>
     <div class="row">
         <div class="col-12 my-3">
-            <a href="{{ route('comics.create') }}" class="btn btn-primary btn-sm">Create your Movies</a>
+            <a href="{{ route('movies.create') }}" class="btn btn-primary btn-sm">Create your Movies</a>
         </div>
     </div>
     <div class="row">
@@ -37,8 +37,8 @@
                         <td> {{ $movie->original_language }} </td>
                         <td> {{ $movie->length }} </td>
                         <td>
-                            <a href=" {{ route('comics.show', $movie->id) }} " class="btn btn-info btn-sm"><i class="fa-solid fa-circle-info"></i></a>
-                            <a href=" {{ route('comics.edit', $movie->id) }} " class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a href=" {{ route('movies.show', $movie->id) }} " class="btn btn-info btn-sm"><i class="fa-solid fa-circle-info"></i></a>
+                            <a href=" {{ route('movies.edit', $movie->id) }} " class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>
                         </td>
                     </tr>
                     @endforeach

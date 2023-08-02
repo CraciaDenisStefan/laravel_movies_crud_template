@@ -13,7 +13,7 @@
             <div>Durata: {{$movie->length}}</div>
             <div>Genere: {{$movie->genre}}</div>
             <div class="mt-5 text-center">
-                <a href="{{route('home')}}" class="btn btn-outline-light "  role="button" aria-disabled="true">Torna alla Home</a>
+                <a href="{{route('homepage')}}" class="btn btn-outline-light "  role="button" aria-disabled="true">Torna alla Home</a>
                 <a class="btn btn-outline-light" href="{{route('movies.index')}}">Vai al DB !</a>
             </div>
         </div>

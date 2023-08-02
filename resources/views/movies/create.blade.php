@@ -28,9 +28,6 @@
                             </div>
                             <div class="col-12 my-3">
                                 <label class="control-label my-3">Immagine</label>
-                                @if($movie->img != NULL || $movie->img != '')
-                                    <div class="col-1">   <img src="{{$movie->img}}" class="img-fluid"></div>
-                                @endif
                                     <input type="text" name="img" id="img" placeholder="Inserisci la img" class="form-control" value="{{ old('img') }}">
                             </div>
                             </div>

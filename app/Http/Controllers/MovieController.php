@@ -37,7 +37,7 @@ class MovieController extends Controller
      */
     public function store(StoreMovieRequest $request)
     {
-        $form_data = $this->validation($request->all());
+        $form_data = $request->all();
 
         $movie = new Movie();
 
@@ -54,9 +54,11 @@ class MovieController extends Controller
      * @param  \App\Models\Movie  $movie
      * @return \Illuminate\Http\Response
      */
-    public function show(Movie $movie)
+    public function show($id)
     {
-        //
+        $movie = Movie::findOrFail($id);
+
+        return view('movies.show', compact('movie'));
     }
 
     /**
@@ -67,7 +69,7 @@ class MovieController extends Controller
      */
     public function edit(Movie $movie)
     {
-        //
+        return view('movies.edit', compact('movie'));
     }
 
     /**
@@ -79,7 +81,12 @@ class MovieController extends Controller
      */
     public function update(UpdateMovieRequest $request, Movie $movie)
     {
-        //
+        $form_data=$request->all();
+
+        $movie->update($form_data);
+
+
+        return redirect()->route('movies.show',$movie->id);
     }
 
     /**
