@@ -8,8 +8,10 @@
             </div>
             <div class="col-12 mt-4">
                 <div class="d-flex justify-content-center">
-                    <a href="#" class="btn btn-primary mx-2">Visualizza film</a>
+
+                    <a href="{{ Route('movies.index') }}" class="btn btn-primary mx-2">Visualizza film</a>
                     <a href="{{ Route('movies.create') }}" class="btn btn-primary mx-2">Aggiungi film</a>
+
                 </div>
             </div>
         </div>

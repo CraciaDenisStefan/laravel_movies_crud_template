@@ -18,5 +18,7 @@ Route::get('/', function () {
     return view('home');
 })->name('homepage');
 
+
 Route::resource('movies', ComicController::class);
+
 
