@@ -1,0 +1,30 @@
+@import '~bootstrap/scss/bootstrap';
+
+@import '/node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+
+header{
+    padding: 10px 0px;
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    ul{
+       display: flex;
+       align-items: center;
+       margin-bottom: 0px;
+
+       li{  
+            margin: 0 10px;
+            
+            a{
+                color: #fff;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+
+       }
+
+       
+    }
+}
