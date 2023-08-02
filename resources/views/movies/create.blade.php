@@ -46,7 +46,7 @@
                                 <label class="control-label my-3">Seleziona lingua</label>
                                 <select class="form-control" name="original_language" id="original_language">
                                     <option value="" disabled>Seleziona Lingua</option>
-                                    <option value="Inglese" @selected(old('original_language) == 'Inglese')>Inglese</option>
+                                    <option value="Inglese" @selected(old('original_language') == 'Inglese')>Inglese</option>
                                     <option value="Francese" @selected(old('original_language') == 'Francese')>Francese</option>
                                     <option value="Tedesco" @selected(old('original_language') == 'Tedesco')>Tedesco</option>
                                 </select>
